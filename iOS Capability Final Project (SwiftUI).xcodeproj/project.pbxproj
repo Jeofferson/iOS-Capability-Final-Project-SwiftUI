@@ -8,17 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		40ACCCF528ED5D4200F2B0AD /* iOS_Capability_Final_Project__SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCCF428ED5D4200F2B0AD /* iOS_Capability_Final_Project__SwiftUI_App.swift */; };
-		40ACCCF728ED5D4200F2B0AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCCF628ED5D4200F2B0AD /* ContentView.swift */; };
 		40ACCCF928ED5D4500F2B0AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40ACCCF828ED5D4500F2B0AD /* Assets.xcassets */; };
 		40ACCCFC28ED5D4500F2B0AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40ACCCFB28ED5D4500F2B0AD /* Preview Assets.xcassets */; };
+		40ACCD0428ED5D7E00F2B0AD /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD0328ED5D7E00F2B0AD /* MainScreen.swift */; };
+		40ACCD0728ED5F8500F2B0AD /* ProductsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD0628ED5F8500F2B0AD /* ProductsScreen.swift */; };
+		40ACCD0A28ED607E00F2B0AD /* CartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD0928ED607E00F2B0AD /* CartScreen.swift */; };
+		40ACCD0E28ED64F500F2B0AD /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 40ACCD0D28ED64F500F2B0AD /* swiftgen.yml */; };
+		40ACCD1028ED668A00F2B0AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40ACCD0F28ED668A00F2B0AD /* Localizable.strings */; };
+		40ACCD1628ED6C6400F2B0AD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD1528ED6C6400F2B0AD /* Strings.swift */; };
+		40ACCD1B28ED745600F2B0AD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 40ACCD1A28ED745600F2B0AD /* .swiftlint.yml */; };
+		40ACCD2028ED8CF600F2B0AD /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40ACCD1F28ED8CF600F2B0AD /* ImageAssets.xcassets */; };
+		40ACCD2228ED8FDD00F2B0AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40ACCD2128ED8FDD00F2B0AD /* LaunchScreen.storyboard */; };
+		40ACCD2428ED955800F2B0AD /* ItemProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD2328ED955800F2B0AD /* ItemProduct.swift */; };
+		40ACCD2C28ED973800F2B0AD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD2B28ED973800F2B0AD /* Product.swift */; };
+		40ACCD2E28EDC05F00F2B0AD /* GetProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD2D28EDC05F00F2B0AD /* GetProductsResponse.swift */; };
+		40ACCD3028EDC36A00F2B0AD /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD2F28EDC36A00F2B0AD /* ProductRepository.swift */; };
+		40ACCD3228EDC3E500F2B0AD /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3128EDC3E500F2B0AD /* ProductService.swift */; };
+		40ACCD3428EDC69700F2B0AD /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3328EDC69700F2B0AD /* BaseService.swift */; };
+		40ACCD3628EDD16000F2B0AD /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3528EDD16000F2B0AD /* ProductsViewModel.swift */; };
+		40ACCD3928EDE10100F2B0AD /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3828EDE10100F2B0AD /* CustomAsyncImage.swift */; };
+		40ACCD3C28EDE69F00F2B0AD /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 40ACCD3B28EDE69F00F2B0AD /* CachedAsyncImage */; };
+		40ACCD4028EDE8C500F2B0AD /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3F28EDE8C500F2B0AD /* Double+Extensions.swift */; };
+		40ACCD4228EDE9AD00F2B0AD /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD4128EDE9AD00F2B0AD /* Price.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40ACCCF128ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Capability Final Project (SwiftUI).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40ACCCF428ED5D4200F2B0AD /* iOS_Capability_Final_Project__SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Capability_Final_Project__SwiftUI_App.swift; sourceTree = "<group>"; };
-		40ACCCF628ED5D4200F2B0AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40ACCCF828ED5D4500F2B0AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40ACCCFB28ED5D4500F2B0AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40ACCD0328ED5D7E00F2B0AD /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		40ACCD0628ED5F8500F2B0AD /* ProductsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsScreen.swift; sourceTree = "<group>"; };
+		40ACCD0928ED607E00F2B0AD /* CartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartScreen.swift; sourceTree = "<group>"; };
+		40ACCD0D28ED64F500F2B0AD /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		40ACCD0F28ED668A00F2B0AD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		40ACCD1528ED6C6400F2B0AD /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		40ACCD1A28ED745600F2B0AD /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		40ACCD1F28ED8CF600F2B0AD /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
+		40ACCD2128ED8FDD00F2B0AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40ACCD2328ED955800F2B0AD /* ItemProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProduct.swift; sourceTree = "<group>"; };
+		40ACCD2B28ED973800F2B0AD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		40ACCD2D28EDC05F00F2B0AD /* GetProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsResponse.swift; sourceTree = "<group>"; };
+		40ACCD2F28EDC36A00F2B0AD /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		40ACCD3128EDC3E500F2B0AD /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		40ACCD3328EDC69700F2B0AD /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		40ACCD3528EDD16000F2B0AD /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		40ACCD3828EDE10100F2B0AD /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
+		40ACCD3F28EDE8C500F2B0AD /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		40ACCD4128EDE9AD00F2B0AD /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40ACCD3C28EDE69F00F2B0AD /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +73,8 @@
 		40ACCCE828ED5D4200F2B0AD = {
 			isa = PBXGroup;
 			children = (
+				40ACCD1A28ED745600F2B0AD /* .swiftlint.yml */,
+				40ACCD0D28ED64F500F2B0AD /* swiftgen.yml */,
 				40ACCCF328ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI) */,
 				40ACCCF228ED5D4200F2B0AD /* Products */,
 			);
@@ -52,9 +92,13 @@
 			isa = PBXGroup;
 			children = (
 				40ACCCF428ED5D4200F2B0AD /* iOS_Capability_Final_Project__SwiftUI_App.swift */,
-				40ACCCF628ED5D4200F2B0AD /* ContentView.swift */,
-				40ACCCF828ED5D4500F2B0AD /* Assets.xcassets */,
-				40ACCCFA28ED5D4500F2B0AD /* Preview Content */,
+				40ACCD2828ED96FF00F2B0AD /* Models */,
+				40ACCD2528ED967200F2B0AD /* Data */,
+				40ACCD0228ED5D6800F2B0AD /* Screens */,
+				40ACCD3728EDE0C700F2B0AD /* ReusableViews */,
+				40ACCD3D28EDE84300F2B0AD /* Utils */,
+				40ACCD0B28ED643C00F2B0AD /* Resources */,
+				40ACCD0C28ED646000F2B0AD /* Generated */,
 			);
 			path = "iOS Capability Final Project (SwiftUI)";
 			sourceTree = "<group>";
@@ -67,6 +111,146 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		40ACCD0228ED5D6800F2B0AD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD2128ED8FDD00F2B0AD /* LaunchScreen.storyboard */,
+				40ACCD0328ED5D7E00F2B0AD /* MainScreen.swift */,
+				40ACCD0528ED5F5A00F2B0AD /* ProductsScreen */,
+				40ACCD0828ED605900F2B0AD /* CartScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		40ACCD0528ED5F5A00F2B0AD /* ProductsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD3528EDD16000F2B0AD /* ProductsViewModel.swift */,
+				40ACCD0628ED5F8500F2B0AD /* ProductsScreen.swift */,
+				40ACCD2328ED955800F2B0AD /* ItemProduct.swift */,
+			);
+			path = ProductsScreen;
+			sourceTree = "<group>";
+		};
+		40ACCD0828ED605900F2B0AD /* CartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD0928ED607E00F2B0AD /* CartScreen.swift */,
+			);
+			path = CartScreen;
+			sourceTree = "<group>";
+		};
+		40ACCD0B28ED643C00F2B0AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCCF828ED5D4500F2B0AD /* Assets.xcassets */,
+				40ACCCFA28ED5D4500F2B0AD /* Preview Content */,
+				40ACCD1228ED678500F2B0AD /* Strings */,
+				40ACCD1E28ED8C9D00F2B0AD /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		40ACCD0C28ED646000F2B0AD /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD1128ED673F00F2B0AD /* SwiftGen */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		40ACCD1128ED673F00F2B0AD /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD1328ED684E00F2B0AD /* Strings */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		40ACCD1228ED678500F2B0AD /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD0F28ED668A00F2B0AD /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		40ACCD1328ED684E00F2B0AD /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD1528ED6C6400F2B0AD /* Strings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		40ACCD1E28ED8C9D00F2B0AD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD1F28ED8CF600F2B0AD /* ImageAssets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		40ACCD2528ED967200F2B0AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD2F28EDC36A00F2B0AD /* ProductRepository.swift */,
+				40ACCD2628ED96B500F2B0AD /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		40ACCD2628ED96B500F2B0AD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD3328EDC69700F2B0AD /* BaseService.swift */,
+				40ACCD3128EDC3E500F2B0AD /* ProductService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		40ACCD2828ED96FF00F2B0AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD2B28ED973800F2B0AD /* Product.swift */,
+				40ACCD2A28ED971700F2B0AD /* Network */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		40ACCD2A28ED971700F2B0AD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD2D28EDC05F00F2B0AD /* GetProductsResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		40ACCD3728EDE0C700F2B0AD /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD3828EDE10100F2B0AD /* CustomAsyncImage.swift */,
+				40ACCD4128EDE9AD00F2B0AD /* Price.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		40ACCD3D28EDE84300F2B0AD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD3E28EDE84D00F2B0AD /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		40ACCD3E28EDE84D00F2B0AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40ACCD3F28EDE8C500F2B0AD /* Double+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +258,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40ACCCFF28ED5D4500F2B0AD /* Build configuration list for PBXNativeTarget "iOS Capability Final Project (SwiftUI)" */;
 			buildPhases = (
+				40ACCD1728ED6E7D00F2B0AD /* Run SwiftLint */,
+				40ACCD1428ED68A300F2B0AD /* Run SwiftGen */,
 				40ACCCED28ED5D4200F2B0AD /* Sources */,
 				40ACCCEE28ED5D4200F2B0AD /* Frameworks */,
 				40ACCCEF28ED5D4200F2B0AD /* Resources */,
@@ -83,6 +269,9 @@
 			dependencies = (
 			);
 			name = "iOS Capability Final Project (SwiftUI)";
+			packageProductDependencies = (
+				40ACCD3B28EDE69F00F2B0AD /* CachedAsyncImage */,
+			);
 			productName = "iOS Capability Final Project (SwiftUI)";
 			productReference = 40ACCCF128ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI).app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +300,9 @@
 				Base,
 			);
 			mainGroup = 40ACCCE828ED5D4200F2B0AD;
+			packageReferences = (
+				40ACCD3A28EDE69F00F2B0AD /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = 40ACCCF228ED5D4200F2B0AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,20 +317,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40ACCD1B28ED745600F2B0AD /* .swiftlint.yml in Resources */,
 				40ACCCFC28ED5D4500F2B0AD /* Preview Assets.xcassets in Resources */,
+				40ACCD2028ED8CF600F2B0AD /* ImageAssets.xcassets in Resources */,
+				40ACCD1028ED668A00F2B0AD /* Localizable.strings in Resources */,
+				40ACCD2228ED8FDD00F2B0AD /* LaunchScreen.storyboard in Resources */,
 				40ACCCF928ED5D4500F2B0AD /* Assets.xcassets in Resources */,
+				40ACCD0E28ED64F500F2B0AD /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40ACCD1428ED68A300F2B0AD /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+		40ACCD1728ED6E7D00F2B0AD /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40ACCCED28ED5D4200F2B0AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40ACCCF728ED5D4200F2B0AD /* ContentView.swift in Sources */,
+				40ACCD2428ED955800F2B0AD /* ItemProduct.swift in Sources */,
+				40ACCD0728ED5F8500F2B0AD /* ProductsScreen.swift in Sources */,
+				40ACCD4028EDE8C500F2B0AD /* Double+Extensions.swift in Sources */,
+				40ACCD3028EDC36A00F2B0AD /* ProductRepository.swift in Sources */,
+				40ACCD2E28EDC05F00F2B0AD /* GetProductsResponse.swift in Sources */,
+				40ACCD0A28ED607E00F2B0AD /* CartScreen.swift in Sources */,
+				40ACCD1628ED6C6400F2B0AD /* Strings.swift in Sources */,
+				40ACCD3628EDD16000F2B0AD /* ProductsViewModel.swift in Sources */,
+				40ACCD4228EDE9AD00F2B0AD /* Price.swift in Sources */,
+				40ACCD0428ED5D7E00F2B0AD /* MainScreen.swift in Sources */,
 				40ACCCF528ED5D4200F2B0AD /* iOS_Capability_Final_Project__SwiftUI_App.swift in Sources */,
+				40ACCD2C28ED973800F2B0AD /* Product.swift in Sources */,
+				40ACCD3928EDE10100F2B0AD /* CustomAsyncImage.swift in Sources */,
+				40ACCD3228EDC3E500F2B0AD /* ProductService.swift in Sources */,
+				40ACCD3428EDC69700F2B0AD /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,13 +517,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS Capability Final Project (SwiftUI)/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iOS Capability Final Project (SwiftUI)/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = F6VA66BUF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -295,13 +546,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS Capability Final Project (SwiftUI)/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iOS Capability Final Project (SwiftUI)/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = F6VA66BUF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40ACCD3A28EDE69F00F2B0AD /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40ACCD3B28EDE69F00F2B0AD /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40ACCD3A28EDE69F00F2B0AD /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 40ACCCE928ED5D4200F2B0AD /* Project object */;
 }

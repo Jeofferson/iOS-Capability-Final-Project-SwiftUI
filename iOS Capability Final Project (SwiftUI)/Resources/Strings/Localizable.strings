@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  iOS Capability Final Project (SwiftUI)
+
+  Created by Jeofferson Dela Pena on 10/5/22.
+  
+*/
+
+"appTitle" = "Shoppy";
+
+"icon.tabView.shop" = "bag.fill";
+"icon.tabView.cart" = "cart.fill";
+
+"icon.insideCart" = "cart.fill";
+"icon.notInsideCart" = "cart";
+"icon.addToCart" = "cart.fill.badge.plus";
+"icon.removeFromCart" = "cart.fill.badge.minus";
+
+"baseURL" = "https://fakestoreapi.com";
+
+"sample.product.name" = "Sample Product";
+"sample.product.imageURLString" = "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg";
+
+"title.addedToCart" = "Added to cart!";
+"confirm.ok" = "OK";

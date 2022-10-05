@@ -1,0 +1,5 @@
+strings:
+  inputs: iOS Capability Final Project (SwiftUI)/Resources/Strings
+  outputs:
+    templateName: structured-swift5
+    output: iOS Capability Final Project (SwiftUI)/Generated/SwiftGen/Strings/Strings.swift
