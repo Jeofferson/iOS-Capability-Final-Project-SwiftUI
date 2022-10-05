@@ -29,7 +29,10 @@
 
 "label.description" = "Description";
 
+"title.cart" = "Cart";
+
 "action.addToCart" = "Add to cart";
+"action.removeFromCart" = "Remove from cart";
 
 "title.addedToCart" = "Added to cart!";
 "confirm.ok" = "OK";

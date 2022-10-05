@@ -10,6 +10,7 @@ import SwiftUI
 struct ItemProduct: View {
     @State private var isPresentingAlert = false
     let product: Product
+    var isInsideCartScreen = false
     var body: some View {
         HStack(spacing: 20) {
             CachedAsyncImageView(imageURL: product.imageURL)
@@ -22,15 +23,17 @@ struct ItemProduct: View {
                     PriceView(price: product.price)
                         .font(.caption)
                 }
-                Spacer(minLength: 20)
-                Image(systemName: L10n.Icon.notInsideCart)
-                    .resizable()
-                    .frame(width: 20, height: 20)
-                    .scaledToFit()
-                    .foregroundColor(.accentColor)
-                    .onTapGesture {
-                        isPresentingAlert = true
-                    }
+                if !isInsideCartScreen {
+                    Spacer(minLength: 20)
+                    Image(systemName: L10n.Icon.notInsideCart)
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .scaledToFit()
+                        .foregroundColor(.accentColor)
+                        .onTapGesture {
+                            isPresentingAlert = true
+                        }
+                }
             }
         }
         .padding(10)

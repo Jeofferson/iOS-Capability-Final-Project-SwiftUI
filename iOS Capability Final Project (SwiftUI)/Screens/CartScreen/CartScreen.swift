@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct CartScreen: View {
+    @State private var cartProducts = [Product.example]
     var body: some View {
-        Text("Cart Screen")
+        List {
+            ForEach(cartProducts) { product in
+                ItemProduct(product: product, isInsideCartScreen: true)
+            }
+            .onDelete {_ in
+                cartProducts.remove(at: 0)
+            }
+        }
+        .listStyle(.insetGrouped)
+        .navigationTitle(L10n.Title.cart)
+        .toolbar {
+            EditButton()
+        }
     }
 }
 
 struct CartScreen_Previews: PreviewProvider {
     static var previews: some View {
-        CartScreen()
+        NavigationStack {
+            CartScreen()
+        }
     }
 }

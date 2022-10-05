@@ -133,7 +133,6 @@
 			children = (
 				40ACCD3528EDD16000F2B0AD /* ProductsViewModel.swift */,
 				40ACCD0628ED5F8500F2B0AD /* ProductsScreen.swift */,
-				40ACCD2328ED955800F2B0AD /* ItemProduct.swift */,
 				40ACCD4328EE0AD700F2B0AD /* ProductScreen */,
 			);
 			path = ProductsScreen;
@@ -236,6 +235,7 @@
 		40ACCD3728EDE0C700F2B0AD /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
+				40ACCD2328ED955800F2B0AD /* ItemProduct.swift */,
 				40ACCD3828EDE10100F2B0AD /* CachedAsyncImageView.swift */,
 				40ACCD4128EDE9AD00F2B0AD /* PriceView.swift */,
 				40ACCD4D28EE3A6800F2B0AD /* RatingView.swift */,

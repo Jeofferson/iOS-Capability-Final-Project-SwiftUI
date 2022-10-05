@@ -20,6 +20,8 @@ internal enum L10n {
   internal enum Action {
     /// Add to cart
     internal static let addToCart = L10n.tr("Localizable", "action.addToCart", fallback: "Add to cart")
+    /// Remove from cart
+    internal static let removeFromCart = L10n.tr("Localizable", "action.removeFromCart", fallback: "Remove from cart")
   }
   internal enum Confirm {
     /// OK
@@ -66,6 +68,8 @@ internal enum L10n {
   internal enum Title {
     /// Added to cart!
     internal static let addedToCart = L10n.tr("Localizable", "title.addedToCart", fallback: "Added to cart!")
+    /// Cart
+    internal static let cart = L10n.tr("Localizable", "title.cart", fallback: "Cart")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

@@ -22,10 +22,12 @@ struct MainScreen: View {
             .tabItem {
                 Image(systemName: L10n.Icon.TabView.shop)
             }
-            CartScreen()
-                .tabItem {
-                    Image(systemName: L10n.Icon.TabView.cart)
-                }
+            NavigationStack {
+                CartScreen()
+            }
+            .tabItem {
+                Image(systemName: L10n.Icon.TabView.cart)
+            }
         }
     }
 }
