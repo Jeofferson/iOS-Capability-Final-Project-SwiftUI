@@ -10,13 +10,19 @@ import Foundation
 struct Product: Identifiable {
     let id: Int
     let name: String
-    let price: Double
     let imageURL: URL?
+    let category: String
+    let description: String
+    let rating: String
+    let price: Double
     static let example = Product(
         id: 1,
         name: L10n.Sample.Product.name,
-        price: 10,
-        imageURL: URL(string: L10n.Sample.Product.imageURLString)
+        imageURL: URL(string: L10n.Sample.Product.imageURLString),
+        category: L10n.Sample.Product.category,
+        description: L10n.Sample.loremIpsum,
+        rating: L10n.Sample.Product.rating,
+        price: 10
     )
 }
 
@@ -26,8 +32,11 @@ extension GetProductsResponse {
             Product(
                 id: $0.id,
                 name: $0.title,
-                price: $0.price,
-                imageURL: URL(string: $0.image)
+                imageURL: URL(string: $0.image),
+                category: $0.category,
+                description: $0.getProductsResponseDescription,
+                rating: "\($0.rating.rate) (\($0.rating.count))",
+                price: $0.price
             )
         }
     }

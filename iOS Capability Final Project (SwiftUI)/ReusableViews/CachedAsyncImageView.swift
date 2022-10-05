@@ -1,5 +1,5 @@
 //
-//  CustomAsyncImage.swift
+//  CachedAsyncImageView.swift
 //  iOS Capability Final Project (SwiftUI)
 //
 //  Created by Jeofferson Dela Pena on 10/5/22.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CachedAsyncImage
 
-struct CustomAsyncImage: View {
+struct CachedAsyncImageView: View {
     let imageURL: URL?
     var body: some View {
         CachedAsyncImage(
@@ -25,8 +25,8 @@ struct CustomAsyncImage: View {
     }
 }
 
-struct CustomImage_Previews: PreviewProvider {
+struct CachedAsyncImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomAsyncImage(imageURL: nil)
+        CachedAsyncImageView(imageURL: nil)
     }
 }

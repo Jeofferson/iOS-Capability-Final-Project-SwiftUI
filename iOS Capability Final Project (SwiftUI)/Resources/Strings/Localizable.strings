@@ -11,6 +11,8 @@
 "icon.tabView.shop" = "bag.fill";
 "icon.tabView.cart" = "cart.fill";
 
+"icon.rating" = "star.fill";
+
 "icon.insideCart" = "cart.fill";
 "icon.notInsideCart" = "cart";
 "icon.addToCart" = "cart.fill.badge.plus";
@@ -18,8 +20,16 @@
 
 "baseURL" = "https://fakestoreapi.com";
 
+"sample.loremIpsum" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
 "sample.product.name" = "Sample Product";
 "sample.product.imageURLString" = "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg";
+"sample.product.category" = "Sample Category";
+"sample.product.rating" = "5 (250)";
+
+"label.description" = "Description";
+
+"action.addToCart" = "Add to cart";
 
 "title.addedToCart" = "Added to cart!";
 "confirm.ok" = "OK";

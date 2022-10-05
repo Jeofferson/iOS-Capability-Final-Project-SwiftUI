@@ -12,7 +12,7 @@ struct ProductsScreen: View {
     var body: some View {
         List {
             ForEach(viewModel.products) { product in
-                NavigationLink(destination: Text(product.name)) {
+                NavigationLink(destination: ProductScreen(product: product)) {
                     ItemProduct(product: product)
                 }
             }

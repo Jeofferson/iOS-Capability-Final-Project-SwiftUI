@@ -12,13 +12,15 @@ struct ItemProduct: View {
     let product: Product
     var body: some View {
         HStack(spacing: 20) {
-            CustomAsyncImage(imageURL: product.imageURL)
+            CachedAsyncImageView(imageURL: product.imageURL)
                 .frame(width: 80, height: 80)
             HStack {
                 VStack(alignment: .leading) {
                     Text(product.name)
+                        .lineLimit(3)
                         .bold()
-                    Price(price: product.price)
+                    PriceView(price: product.price)
+                        .font(.caption)
                 }
                 Spacer(minLength: 20)
                 Image(systemName: L10n.Icon.notInsideCart)
@@ -33,7 +35,7 @@ struct ItemProduct: View {
         }
         .padding(10)
         .alert(isPresented: $isPresentingAlert) {
-            Alert(title: Text(L10n.Title.addedToCart), dismissButton: .default(Text(L10n.Confirm.ok)))
+            AlertManager.getAlertAddedToCart()
         }
     }
 }
