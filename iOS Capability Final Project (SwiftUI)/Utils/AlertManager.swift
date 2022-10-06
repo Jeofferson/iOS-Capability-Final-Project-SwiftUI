@@ -6,9 +6,17 @@
 //
 
 import SwiftUI
+import CoreData
 
-class AlertManager {
-    static func getAlertAddedToCart() -> Alert {
-        Alert(title: Text(L10n.Title.addedToCart), dismissButton: .default(Text(L10n.Confirm.ok)))
+struct AlertManager {
+    static func getAddedToOrRemovedFromCartAlert(viewContext: NSManagedObjectContext, product: Product) -> Alert {
+        Alert(
+            title: Text(
+                product.isAddedToCart(viewContext: viewContext)
+                    ? L10n.Title.addedToCart
+                    : L10n.Title.removedFromCart
+            ),
+            dismissButton: .default(Text(L10n.Confirm.ok))
+        )
     }
 }

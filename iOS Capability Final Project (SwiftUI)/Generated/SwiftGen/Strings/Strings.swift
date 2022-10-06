@@ -30,6 +30,8 @@ internal enum L10n {
   internal enum Icon {
     /// cart.fill.badge.plus
     internal static let addToCart = L10n.tr("Localizable", "icon.addToCart", fallback: "cart.fill.badge.plus")
+    /// tray.circle.fill
+    internal static let emptyCart = L10n.tr("Localizable", "icon.emptyCart", fallback: "tray.circle.fill")
     /// cart.fill
     internal static let insideCart = L10n.tr("Localizable", "icon.insideCart", fallback: "cart.fill")
     /// cart
@@ -48,6 +50,8 @@ internal enum L10n {
   internal enum Label {
     /// Description
     internal static let description = L10n.tr("Localizable", "label.description", fallback: "Description")
+    /// Cart is Empty
+    internal static let emptyCart = L10n.tr("Localizable", "label.emptyCart", fallback: "Cart is Empty")
   }
   internal enum Sample {
     /// Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -70,6 +74,8 @@ internal enum L10n {
     internal static let addedToCart = L10n.tr("Localizable", "title.addedToCart", fallback: "Added to cart!")
     /// Cart
     internal static let cart = L10n.tr("Localizable", "title.cart", fallback: "Cart")
+    /// Removed from cart!
+    internal static let removedFromCart = L10n.tr("Localizable", "title.removedFromCart", fallback: "Removed from cart!")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

@@ -12,13 +12,22 @@ struct ProductsScreen: View {
     var body: some View {
         List {
             ForEach(viewModel.products) { product in
-                NavigationLink(destination: ProductScreen(product: product)) {
+                NavigationLink(
+                    destination: ProductScreen(product: product)
+                ) {
                     ItemProduct(product: product)
                 }
             }
         }
         .listStyle(.grouped)
         .onAppear(perform: viewModel.getProducts)
+        .overlay(
+            Group {
+                if viewModel.products.isEmpty {
+                    ProgressView()
+                }
+            }
+        )
         .navigationTitle(L10n.appTitle)
     }
 }
@@ -27,13 +36,7 @@ struct ProductsScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             ProductsScreen()
-                .environmentObject(
-                    ProductsViewModel(
-                        repository: ProductRepository(
-                            service: ProductService()
-                        )
-                    )
-                )
+                .environmentObject(ProductsViewModel(service: ProductService()))
         }
     }
 }

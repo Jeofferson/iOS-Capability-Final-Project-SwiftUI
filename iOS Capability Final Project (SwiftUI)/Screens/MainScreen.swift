@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct MainScreen: View {
-    @StateObject var productsViewModel = ProductsViewModel(
-        repository: ProductRepository(
-            service: ProductService()
-        )
-    )
+    @StateObject var productsViewModel = ProductsViewModel(service: ProductService())
     var body: some View {
         TabView {
             NavigationStack {

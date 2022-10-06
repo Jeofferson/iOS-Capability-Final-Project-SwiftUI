@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProductScreen: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var addedToCartStateManager: AddedToCartStateManager
     @State private var isPresentingAlert = false
     let product: Product
     var body: some View {
@@ -38,28 +40,44 @@ struct ProductScreen: View {
                     .padding(20)
                 }
             }
-            Button(
-                action: {
-                    isPresentingAlert = true
-                }, label: {
-                    HStack {
-                        Image(systemName: L10n.Icon.addToCart)
+            Group {
+                Button(
+                    action: {
+                        PersistenceController.shared.saveOrDeleteProduct(
+                            viewContext: viewContext,
+                            product: product
+                        )
+                        isPresentingAlert = true
+                    }, label: {
+                        HStack {
+                            Image(
+                                systemName: product.isAddedToCart(viewContext: viewContext)
+                                    ? L10n.Icon.removeFromCart
+                                    : L10n.Icon.addToCart
+                            )
                             .foregroundColor(.white)
-                        Text(L10n.Action.addToCart)
+                            Text(
+                                product.isAddedToCart(viewContext: viewContext)
+                                   ? L10n.Action.removeFromCart
+                                   : L10n.Action.addToCart
+                            )
                             .foregroundColor(.white)
                             .bold()
+                        }
                     }
-                    .frame(maxWidth: .infinity)
-                    .padding(10)
-                }
-            )
-            .background(Color.accentColor)
-            .padding(.bottom, 1)
+                )
+                .frame(maxWidth: .infinity)
+                .padding(10)
+                .background(Color.accentColor)
+            }
+            .padding([.leading, .trailing], 20)
+            .padding([.top, .bottom], 10)
+            .border(width: 0.5, edges: [.top, .bottom], color: Color(.lightGray))
         }
         .navigationTitle(product.category.capitalized)
         .navigationBarTitleDisplayMode(.inline)
         .alert(isPresented: $isPresentingAlert) {
-            AlertManager.getAlertAddedToCart()
+            AlertManager.getAddedToOrRemovedFromCartAlert(viewContext: viewContext, product: product)
         }
     }
 }
@@ -68,6 +86,11 @@ struct ProductScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             ProductScreen(product: Product.example)
+                .environment(
+                    \.managedObjectContext,
+                     PersistenceController.preview.container.viewContext
+                )
+                .environmentObject(AddedToCartStateManager())
         }
     }
 }

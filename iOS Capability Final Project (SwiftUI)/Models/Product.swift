@@ -5,7 +5,7 @@
 //  Created by Jeofferson Dela Pena on 10/5/22.
 //
 
-import Foundation
+import CoreData
 
 struct Product: Identifiable {
     let id: Int
@@ -24,20 +24,22 @@ struct Product: Identifiable {
         rating: L10n.Sample.Product.rating,
         price: 10
     )
+    func toDBProduct(viewContext: NSManagedObjectContext) -> DBProduct {
+        let dbProduct = DBProduct(context: viewContext)
+        dbProduct.id = Int64(id)
+        dbProduct.name = name
+        dbProduct.imageURLString = imageURL?.absoluteString
+        dbProduct.price = price
+        dbProduct.timestamp = Date()
+        return dbProduct
+    }
+    func isAddedToCart(viewContext: NSManagedObjectContext) -> Bool {
+        PersistenceController.shared.getDBProduct(viewContext: viewContext, withID: id) != nil
+    }
 }
 
-extension GetProductsResponse {
-    func toProducts() -> [Product] {
-        map {
-            Product(
-                id: $0.id,
-                name: $0.title,
-                imageURL: URL(string: $0.image),
-                category: $0.category,
-                description: $0.getProductsResponseDescription,
-                rating: "\($0.rating.rate) (\($0.rating.count))",
-                price: $0.price
-            )
-        }
+extension Array<Product> {
+    func toDBProducts(viewContext: NSManagedObjectContext) -> [DBProduct] {
+        map { $0.toDBProduct(viewContext: viewContext) }
     }
 }

@@ -6,23 +6,40 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct CartScreen: View {
-    @State private var cartProducts = [Product.example]
+    @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var addedToCartStateManager: AddedToCartStateManager
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \DBProduct.timestamp, ascending: false)],
+        animation: .default
+    )
+    private var dbProducts: FetchedResults<DBProduct>
     var body: some View {
-        List {
-            ForEach(cartProducts) { product in
-                ItemProduct(product: product, isInsideCartScreen: true)
-            }
-            .onDelete {_ in
-                cartProducts.remove(at: 0)
+        Group {
+            if dbProducts.isEmpty {
+                EmptyCartView()
+            } else {
+                List {
+                    ForEach(dbProducts.toProducts()) { product in
+                        ItemProduct(product: product, isInsideCartScreen: true)
+                    }
+                    .onDelete { indexSet in
+                        withAnimation {
+                            indexSet.map { dbProducts[$0] }.forEach(viewContext.delete)
+                            PersistenceController.shared.save()
+                            addedToCartStateManager.state.toggle()
+                        }
+                    }
+                }
+                .listStyle(.insetGrouped)
+                .toolbar {
+                    EditButton()
+                }
             }
         }
-        .listStyle(.insetGrouped)
         .navigationTitle(L10n.Title.cart)
-        .toolbar {
-            EditButton()
-        }
     }
 }
 
@@ -30,6 +47,11 @@ struct CartScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             CartScreen()
+                .environment(
+                    \.managedObjectContext,
+                     PersistenceController.preview.container.viewContext
+                )
+                .environmentObject(AddedToCartStateManager())
         }
     }
 }

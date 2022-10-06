@@ -27,6 +27,6 @@ struct CachedAsyncImageView: View {
 
 struct CachedAsyncImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CachedAsyncImageView(imageURL: nil)
+        CachedAsyncImageView(imageURL: Product.example.imageURL)
     }
 }

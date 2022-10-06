@@ -9,12 +9,12 @@ import Foundation
 
 class ProductsViewModel: ObservableObject {
     @Published var products: [Product] = []
-    private let repository: ProductRepository
-    init(repository: ProductRepository) {
-        self.repository = repository
+    private let service: ProductService
+    init(service: ProductService) {
+        self.service = service
     }
     func getProducts() {
-        repository.getProducts { [weak self] products, error in
+        service.getProducts { [weak self] products, error in
             guard let self = self else { return }
             guard let products = products, error == nil else { return }
             self.products = products

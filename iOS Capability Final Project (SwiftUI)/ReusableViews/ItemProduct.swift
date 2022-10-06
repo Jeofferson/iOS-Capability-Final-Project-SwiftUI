@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ItemProduct: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var addedToCartStateManager: AddedToCartStateManager
     @State private var isPresentingAlert = false
     let product: Product
     var isInsideCartScreen = false
@@ -25,20 +27,28 @@ struct ItemProduct: View {
                 }
                 if !isInsideCartScreen {
                     Spacer(minLength: 20)
-                    Image(systemName: L10n.Icon.notInsideCart)
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                        .scaledToFit()
-                        .foregroundColor(.accentColor)
-                        .onTapGesture {
-                            isPresentingAlert = true
-                        }
+                    Image(
+                        systemName: product.isAddedToCart(viewContext: viewContext)
+                            ? L10n.Icon.insideCart
+                            : L10n.Icon.notInsideCart
+                    )
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .scaledToFit()
+                    .foregroundColor(.accentColor)
+                    .onTapGesture {
+                        PersistenceController.shared.saveOrDeleteProduct(
+                            viewContext: viewContext,
+                            product: product
+                        )
+                        isPresentingAlert = true
+                    }
                 }
             }
         }
         .padding(10)
         .alert(isPresented: $isPresentingAlert) {
-            AlertManager.getAlertAddedToCart()
+            AlertManager.getAddedToOrRemovedFromCartAlert(viewContext: viewContext, product: product)
         }
     }
 }
@@ -46,5 +56,10 @@ struct ItemProduct: View {
 struct ItemProduct_Previews: PreviewProvider {
     static var previews: some View {
         ItemProduct(product: Product.example)
+            .environment(
+                \.managedObjectContext,
+                 PersistenceController.preview.container.viewContext
+            )
+            .environmentObject(AddedToCartStateManager())
     }
 }

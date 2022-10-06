@@ -18,6 +18,8 @@
 "icon.addToCart" = "cart.fill.badge.plus";
 "icon.removeFromCart" = "cart.fill.badge.minus";
 
+"icon.emptyCart" = "tray.circle.fill";
+
 "baseURL" = "https://fakestoreapi.com";
 
 "sample.loremIpsum" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
@@ -34,5 +36,8 @@
 "action.addToCart" = "Add to cart";
 "action.removeFromCart" = "Remove from cart";
 
+"label.emptyCart" = "Cart is Empty";
+
 "title.addedToCart" = "Added to cart!";
+"title.removedFromCart" = "Removed from cart!";
 "confirm.ok" = "OK";

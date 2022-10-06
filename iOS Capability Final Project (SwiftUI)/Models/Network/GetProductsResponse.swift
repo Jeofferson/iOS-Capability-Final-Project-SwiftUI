@@ -66,3 +66,23 @@ extension URLSession {
         return self.codableTask(with: url, completionHandler: completionHandler)
     }
 }
+
+extension GetProductsResponseElement {
+    func toProduct() -> Product {
+        Product(
+            id: id,
+            name: title,
+            imageURL: URL(string: image),
+            category: category,
+            description: getProductsResponseDescription,
+            rating: "\(rating.rate) (\(rating.count))",
+            price: price
+        )
+    }
+}
+
+extension GetProductsResponse {
+    func toProducts() -> [Product] {
+        map { $0.toProduct() }
+    }
+}
