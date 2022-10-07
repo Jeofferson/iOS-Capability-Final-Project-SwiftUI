@@ -47,6 +47,7 @@ struct ProductScreen: View {
                             viewContext: viewContext,
                             product: product
                         )
+                        addedToCartStateManager.state.toggle()
                         isPresentingAlert = true
                     }, label: {
                         HStack {

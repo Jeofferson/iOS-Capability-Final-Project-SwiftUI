@@ -29,8 +29,8 @@ struct CartScreen: View {
                         withAnimation {
                             indexSet.map { dbProducts[$0] }.forEach(viewContext.delete)
                             PersistenceController.shared.save()
-                            addedToCartStateManager.state.toggle()
                         }
+                        addedToCartStateManager.state.toggle()
                     }
                 }
                 .listStyle(.insetGrouped)

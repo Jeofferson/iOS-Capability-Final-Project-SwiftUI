@@ -261,8 +261,8 @@
 		40ACCD3728EDE0C700F2B0AD /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
-				40ACCD4128EDE9AD00F2B0AD /* PriceView.swift */,
 				40ACCD4D28EE3A6800F2B0AD /* RatingView.swift */,
+				40ACCD4128EDE9AD00F2B0AD /* PriceView.swift */,
 				40ACCD3828EDE10100F2B0AD /* CachedAsyncImageView.swift */,
 				40ACCD8E28EF353B00F2B0AD /* EmptyCartView.swift */,
 				40ACCD2328ED955800F2B0AD /* ItemProduct.swift */,
@@ -274,9 +274,9 @@
 			isa = PBXGroup;
 			children = (
 				40ACCD3E28EDE84D00F2B0AD /* Extensions */,
+				40ACCD8C28EF33A300F2B0AD /* ErrorManager.swift */,
 				40ACCD8428EF0EF800F2B0AD /* EdgeBorder.swift */,
 				40ACCD4928EE2CB400F2B0AD /* AlertManager.swift */,
-				40ACCD8C28EF33A300F2B0AD /* ErrorManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
