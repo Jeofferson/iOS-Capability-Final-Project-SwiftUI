@@ -21,21 +21,18 @@ struct EdgeBorder: Shape {
                 case .trailing: return rect.maxX - width
                 }
             }
-
             var y: CGFloat {
                 switch edge {
                 case .top, .leading, .trailing: return rect.minY
                 case .bottom: return rect.maxY - width
                 }
             }
-
             var w: CGFloat {
                 switch edge {
                 case .top, .bottom: return rect.width
                 case .leading, .trailing: return self.width
                 }
             }
-
             var h: CGFloat {
                 switch edge {
                 case .top, .bottom: return self.width
