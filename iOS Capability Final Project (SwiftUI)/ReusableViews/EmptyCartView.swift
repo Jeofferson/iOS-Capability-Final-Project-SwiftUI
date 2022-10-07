@@ -15,6 +15,7 @@ struct EmptyCartView: View {
                 .frame(width: 80, height: 80)
                 .foregroundColor(.accentColor)
             Text(L10n.Label.emptyCart)
+                .bold()
         }
     }
 }
