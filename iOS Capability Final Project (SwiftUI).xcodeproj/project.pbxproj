@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		403684DE28EF510D00B890D6 /* AddedToCartStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403684DD28EF510D00B890D6 /* AddedToCartStateManager.swift */; };
+		40818AA228F8218C004F3DC2 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 40818AA128F8218C004F3DC2 /* Quick */; };
+		40818AA428F82444004F3DC2 /* ProductsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40818AA328F82444004F3DC2 /* ProductsViewModelSpec.swift */; };
+		40818AA728F825A7004F3DC2 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 40818AA628F825A7004F3DC2 /* Nimble */; };
+		40818AA928F8279F004F3DC2 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40818AA828F8279F004F3DC2 /* ProductService.swift */; };
+		40818AAC28F828BD004F3DC2 /* ProductServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40818AAB28F828BD004F3DC2 /* ProductServiceMock.swift */; };
 		40ACCCF528ED5D4200F2B0AD /* iOS_Capability_Final_Project__SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCCF428ED5D4200F2B0AD /* iOS_Capability_Final_Project__SwiftUI_App.swift */; };
 		40ACCCF928ED5D4500F2B0AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40ACCCF828ED5D4500F2B0AD /* Assets.xcassets */; };
 		40ACCCFC28ED5D4500F2B0AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40ACCCFB28ED5D4500F2B0AD /* Preview Assets.xcassets */; };
@@ -23,7 +28,7 @@
 		40ACCD2428ED955800F2B0AD /* ItemProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD2328ED955800F2B0AD /* ItemProduct.swift */; };
 		40ACCD2C28ED973800F2B0AD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD2B28ED973800F2B0AD /* Product.swift */; };
 		40ACCD2E28EDC05F00F2B0AD /* GetProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD2D28EDC05F00F2B0AD /* GetProductsResponse.swift */; };
-		40ACCD3228EDC3E500F2B0AD /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3128EDC3E500F2B0AD /* ProductService.swift */; };
+		40ACCD3228EDC3E500F2B0AD /* ProductServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3128EDC3E500F2B0AD /* ProductServiceImpl.swift */; };
 		40ACCD3428EDC69700F2B0AD /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3328EDC69700F2B0AD /* BaseService.swift */; };
 		40ACCD3628EDD16000F2B0AD /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3528EDD16000F2B0AD /* ProductsViewModel.swift */; };
 		40ACCD3928EDE10100F2B0AD /* CachedAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD3828EDE10100F2B0AD /* CachedAsyncImageView.swift */; };
@@ -43,8 +48,22 @@
 		40ACCD8F28EF353B00F2B0AD /* EmptyCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD8E28EF353B00F2B0AD /* EmptyCartView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		40818A9B28F8212E004F3DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40ACCCE928ED5D4200F2B0AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40ACCCF028ED5D4200F2B0AD;
+			remoteInfo = "iOS Capability Final Project (SwiftUI)";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		403684DD28EF510D00B890D6 /* AddedToCartStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedToCartStateManager.swift; sourceTree = "<group>"; };
+		40818A9728F8212E004F3DC2 /* iOS Capability Final Project (SwiftUI)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Capability Final Project (SwiftUI)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40818AA328F82444004F3DC2 /* ProductsViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModelSpec.swift; sourceTree = "<group>"; };
+		40818AA828F8279F004F3DC2 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		40818AAB28F828BD004F3DC2 /* ProductServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceMock.swift; sourceTree = "<group>"; };
 		40ACCCF128ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Capability Final Project (SwiftUI).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40ACCCF428ED5D4200F2B0AD /* iOS_Capability_Final_Project__SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Capability_Final_Project__SwiftUI_App.swift; sourceTree = "<group>"; };
 		40ACCCF828ED5D4500F2B0AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +80,7 @@
 		40ACCD2328ED955800F2B0AD /* ItemProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProduct.swift; sourceTree = "<group>"; };
 		40ACCD2B28ED973800F2B0AD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		40ACCD2D28EDC05F00F2B0AD /* GetProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsResponse.swift; sourceTree = "<group>"; };
-		40ACCD3128EDC3E500F2B0AD /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		40ACCD3128EDC3E500F2B0AD /* ProductServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceImpl.swift; sourceTree = "<group>"; };
 		40ACCD3328EDC69700F2B0AD /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		40ACCD3528EDD16000F2B0AD /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		40ACCD3828EDE10100F2B0AD /* CachedAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImageView.swift; sourceTree = "<group>"; };
@@ -81,6 +100,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		40818A9428F8212E004F3DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40818AA228F8218C004F3DC2 /* Quick in Frameworks */,
+				40818AA728F825A7004F3DC2 /* Nimble in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40ACCCEE28ED5D4200F2B0AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,12 +128,31 @@
 			path = StateManagers;
 			sourceTree = "<group>";
 		};
+		40818A9828F8212E004F3DC2 /* iOS Capability Final Project (SwiftUI)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				40818AA328F82444004F3DC2 /* ProductsViewModelSpec.swift */,
+			);
+			path = "iOS Capability Final Project (SwiftUI)Tests";
+			sourceTree = "<group>";
+		};
+		40818AAA28F82890004F3DC2 /* ProductService */ = {
+			isa = PBXGroup;
+			children = (
+				40818AA828F8279F004F3DC2 /* ProductService.swift */,
+				40ACCD3128EDC3E500F2B0AD /* ProductServiceImpl.swift */,
+				40818AAB28F828BD004F3DC2 /* ProductServiceMock.swift */,
+			);
+			path = ProductService;
+			sourceTree = "<group>";
+		};
 		40ACCCE828ED5D4200F2B0AD = {
 			isa = PBXGroup;
 			children = (
 				40ACCD1A28ED745600F2B0AD /* .swiftlint.yml */,
 				40ACCD0D28ED64F500F2B0AD /* swiftgen.yml */,
 				40ACCCF328ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI) */,
+				40818A9828F8212E004F3DC2 /* iOS Capability Final Project (SwiftUI)Tests */,
 				40ACCCF228ED5D4200F2B0AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				40ACCCF128ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI).app */,
+				40818A9728F8212E004F3DC2 /* iOS Capability Final Project (SwiftUI)Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,7 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				40ACCD3328EDC69700F2B0AD /* BaseService.swift */,
-				40ACCD3128EDC3E500F2B0AD /* ProductService.swift */,
+				40818AAA28F82890004F3DC2 /* ProductService */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -319,6 +367,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		40818A9628F8212E004F3DC2 /* iOS Capability Final Project (SwiftUI)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40818A9F28F8212E004F3DC2 /* Build configuration list for PBXNativeTarget "iOS Capability Final Project (SwiftUI)Tests" */;
+			buildPhases = (
+				40818A9328F8212E004F3DC2 /* Sources */,
+				40818A9428F8212E004F3DC2 /* Frameworks */,
+				40818A9528F8212E004F3DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40818A9C28F8212E004F3DC2 /* PBXTargetDependency */,
+			);
+			name = "iOS Capability Final Project (SwiftUI)Tests";
+			packageProductDependencies = (
+				40818AA128F8218C004F3DC2 /* Quick */,
+				40818AA628F825A7004F3DC2 /* Nimble */,
+			);
+			productName = "iOS Capability Final Project (SwiftUI)Tests";
+			productReference = 40818A9728F8212E004F3DC2 /* iOS Capability Final Project (SwiftUI)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		40ACCCF028ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40ACCCFF28ED5D4500F2B0AD /* Build configuration list for PBXNativeTarget "iOS Capability Final Project (SwiftUI)" */;
@@ -351,6 +421,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					40818A9628F8212E004F3DC2 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 40ACCCF028ED5D4200F2B0AD;
+					};
 					40ACCCF028ED5D4200F2B0AD = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -367,17 +441,27 @@
 			mainGroup = 40ACCCE828ED5D4200F2B0AD;
 			packageReferences = (
 				40ACCD3A28EDE69F00F2B0AD /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				40818AA028F8218C004F3DC2 /* XCRemoteSwiftPackageReference "Quick" */,
+				40818AA528F825A7004F3DC2 /* XCRemoteSwiftPackageReference "Nimble" */,
 			);
 			productRefGroup = 40ACCCF228ED5D4200F2B0AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				40ACCCF028ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI) */,
+				40818A9628F8212E004F3DC2 /* iOS Capability Final Project (SwiftUI)Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		40818A9528F8212E004F3DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40ACCCEF28ED5D4200F2B0AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +520,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		40818A9328F8212E004F3DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40818AA428F82444004F3DC2 /* ProductsViewModelSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40ACCCED28ED5D4200F2B0AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,6 +535,7 @@
 				40ACCD2428ED955800F2B0AD /* ItemProduct.swift in Sources */,
 				40ACCD4A28EE2CB400F2B0AD /* AlertManager.swift in Sources */,
 				40ACCD8528EF0EF800F2B0AD /* EdgeBorder.swift in Sources */,
+				40818AAC28F828BD004F3DC2 /* ProductServiceMock.swift in Sources */,
 				40ACCD0728ED5F8500F2B0AD /* ProductsScreen.swift in Sources */,
 				40ACCD4028EDE8C500F2B0AD /* Double+Extensions.swift in Sources */,
 				40ACCD2E28EDC05F00F2B0AD /* GetProductsResponse.swift in Sources */,
@@ -455,12 +548,13 @@
 				40ACCD8328EF0E9700F2B0AD /* View+Extensions.swift in Sources */,
 				40ACCD7928EEEBEF00F2B0AD /* Main.xcdatamodeld in Sources */,
 				40ACCD0428ED5D7E00F2B0AD /* MainScreen.swift in Sources */,
+				40818AA928F8279F004F3DC2 /* ProductService.swift in Sources */,
 				40ACCD8728EF127B00F2B0AD /* ProductPersistence.swift in Sources */,
 				40ACCCF528ED5D4200F2B0AD /* iOS_Capability_Final_Project__SwiftUI_App.swift in Sources */,
 				40ACCD2C28ED973800F2B0AD /* Product.swift in Sources */,
 				40ACCD3928EDE10100F2B0AD /* CachedAsyncImageView.swift in Sources */,
 				40ACCD8D28EF33A300F2B0AD /* ErrorManager.swift in Sources */,
-				40ACCD3228EDC3E500F2B0AD /* ProductService.swift in Sources */,
+				40ACCD3228EDC3E500F2B0AD /* ProductServiceImpl.swift in Sources */,
 				403684DE28EF510D00B890D6 /* AddedToCartStateManager.swift in Sources */,
 				40ACCD3428EDC69700F2B0AD /* BaseService.swift in Sources */,
 				40ACCD4E28EE3A6800F2B0AD /* RatingView.swift in Sources */,
@@ -471,7 +565,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		40818A9C28F8212E004F3DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40ACCCF028ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI) */;
+			targetProxy = 40818A9B28F8212E004F3DC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		40818A9D28F8212E004F3DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6VA66BUF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stratpoint.iOS-Capability-Final-Project--SwiftUI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Capability Final Project (SwiftUI).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS Capability Final Project (SwiftUI)";
+			};
+			name = Debug;
+		};
+		40818A9E28F8212E004F3DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6VA66BUF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stratpoint.iOS-Capability-Final-Project--SwiftUI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Capability Final Project (SwiftUI).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS Capability Final Project (SwiftUI)";
+			};
+			name = Release;
+		};
 		40ACCCFD28ED5D4500F2B0AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -647,6 +785,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		40818A9F28F8212E004F3DC2 /* Build configuration list for PBXNativeTarget "iOS Capability Final Project (SwiftUI)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40818A9D28F8212E004F3DC2 /* Debug */,
+				40818A9E28F8212E004F3DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		40ACCCEC28ED5D4200F2B0AD /* Build configuration list for PBXProject "iOS Capability Final Project (SwiftUI)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -668,6 +815,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		40818AA028F8218C004F3DC2 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		40818AA528F825A7004F3DC2 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		40ACCD3A28EDE69F00F2B0AD /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
@@ -679,6 +842,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		40818AA128F8218C004F3DC2 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40818AA028F8218C004F3DC2 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		40818AA628F825A7004F3DC2 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40818AA528F825A7004F3DC2 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
 		40ACCD3B28EDE69F00F2B0AD /* CachedAsyncImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 40ACCD3A28EDE69F00F2B0AD /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;

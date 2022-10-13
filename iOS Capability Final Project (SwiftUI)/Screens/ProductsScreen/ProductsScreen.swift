@@ -36,7 +36,7 @@ struct ProductsScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             ProductsScreen()
-                .environmentObject(ProductsViewModel(service: ProductService()))
+                .environmentObject(ProductsViewModel(service: ProductServiceImpl()))
         }
     }
 }

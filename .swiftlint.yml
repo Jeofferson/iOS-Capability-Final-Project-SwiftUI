@@ -1,6 +1,7 @@
 excluded:
   - iOS Capability Final Project (SwiftUI)/iOS_Capability_Final_Project__SwiftUI_App.swift
   - iOS Capability Final Project (SwiftUI)/Models/Network
+  - iOS Capability Final Project (SwiftUI)Tests
 
 disabled_rules:
   - identifier_name

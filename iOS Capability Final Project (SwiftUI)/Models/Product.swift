@@ -7,7 +7,7 @@
 
 import CoreData
 
-struct Product: Identifiable {
+struct Product: Identifiable, Equatable {
     let id: Int
     let name: String
     let imageURL: URL?

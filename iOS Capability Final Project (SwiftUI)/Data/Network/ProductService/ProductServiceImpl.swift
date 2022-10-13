@@ -1,5 +1,5 @@
 //
-//  ProductService.swift
+//  ProductServiceImpl.swift
 //  iOS Capability Final Project (SwiftUI)
 //
 //  Created by Jeofferson Dela Pena on 10/5/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProductService: BaseService {
+class ProductServiceImpl: BaseService, ProductService {
     func getProducts(completion: @escaping ([Product]?, Error?) -> Void) {
         guard let url = getURL(forPath: "/products") else {
             return
