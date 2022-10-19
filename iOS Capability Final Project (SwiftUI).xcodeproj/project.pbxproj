@@ -46,6 +46,8 @@
 		40ACCD8728EF127B00F2B0AD /* ProductPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD8628EF127B00F2B0AD /* ProductPersistence.swift */; };
 		40ACCD8D28EF33A300F2B0AD /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD8C28EF33A300F2B0AD /* ErrorManager.swift */; };
 		40ACCD8F28EF353B00F2B0AD /* EmptyCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCD8E28EF353B00F2B0AD /* EmptyCartView.swift */; };
+		40ED9C34290000AA00A85917 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 40ED9C33290000AA00A85917 /* Gemfile */; };
+		40ED9C362900019600A85917 /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 40ED9C352900019600A85917 /* Gemfile.lock */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		40ACCD8628EF127B00F2B0AD /* ProductPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPersistence.swift; sourceTree = "<group>"; };
 		40ACCD8C28EF33A300F2B0AD /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
 		40ACCD8E28EF353B00F2B0AD /* EmptyCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCartView.swift; sourceTree = "<group>"; };
+		40ED9C33290000AA00A85917 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		40ED9C352900019600A85917 /* Gemfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 		40ACCCE828ED5D4200F2B0AD = {
 			isa = PBXGroup;
 			children = (
+				40ED9C33290000AA00A85917 /* Gemfile */,
+				40ED9C352900019600A85917 /* Gemfile.lock */,
 				40ACCD1A28ED745600F2B0AD /* .swiftlint.yml */,
 				40ACCD0D28ED64F500F2B0AD /* swiftgen.yml */,
 				40ACCCF328ED5D4200F2B0AD /* iOS Capability Final Project (SwiftUI) */,
@@ -466,6 +472,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40ED9C362900019600A85917 /* Gemfile.lock in Resources */,
+				40ED9C34290000AA00A85917 /* Gemfile in Resources */,
 				40ACCD1B28ED745600F2B0AD /* .swiftlint.yml in Resources */,
 				40ACCCFC28ED5D4500F2B0AD /* Preview Assets.xcassets in Resources */,
 				40ACCD2028ED8CF600F2B0AD /* ImageAssets.xcassets in Resources */,
